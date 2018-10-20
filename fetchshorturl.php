@@ -1,3 +1,4 @@
+<?php
 function auto ($url) {
 if (function_exists('curl_init')) {
 $ch = curl_init($url);
@@ -34,4 +35,4 @@ $gettinycc=auto("http://tiny.cc/?c=rest_api&m=shorten&version=2.0.3&format=json&
 echo isgd("http://www.domain.com?id=12345&ref=1a2b3c&or=isgd")."<br>";
 echo createTinyUrl("http://www.domain.com?id=12345&ref=1a2b3c&or=isgd")."<br>";
 echo tinycc("http://www.domain.com?id=12345&ref=1a2b3c&or=isgd")."<br>";
-
+?>
